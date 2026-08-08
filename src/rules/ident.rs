@@ -20,7 +20,7 @@
 //!   precomposed `é` is fine).
 //!
 //! The classifier is structured so an exact category table can drop in later: replace the bodies
-//! of [`unicode_start_approximation`] and [`unicode_continue_approximation`].
+//! of `unicode_start_approximation` and `unicode_continue_approximation`.
 
 use crate::rules::{CharAt, Json5Token, peek_char_at};
 use strata_lexer::{LexError, Lookahead, Match, Matcher};
