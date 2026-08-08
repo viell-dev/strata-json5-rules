@@ -40,3 +40,8 @@ pub use rules::{
     PunctRule, SharedRuleSet, StrictRuleSet, StringRule, WhitespaceRule, is_json5_whitespace,
     strict_rule_set, strict_scanner,
 };
+
+/// Compile-checks the README examples alongside the doctests.
+#[cfg(doctest)]
+#[doc = include_str!("../README.md")]
+mod readme {}
